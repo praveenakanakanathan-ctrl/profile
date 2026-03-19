@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piraveena Kanakanathan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <a href="#" class="nav-logo">Piraveena K.</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Fullscreen Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close Menu">✕</button>
+    <a href="#skills"    onclick="closeMobile()">Skills</a>
+    <a href="#projects"  onclick="closeMobile()">Projects</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#contact"   onclick="closeMobile()" class="mobile-hire">Hire Me</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero-wrapper">
+    <div class="hero">
+
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Available for Internships
+        </div>
+
+        <h1 class="hero-name">
+          Piraveena<br>
+          <span class="hero-name-line2">Kanakanathan</span>
+        </h1>
+
+        <p class="hero-subtitle">Software Engineering Intern &amp; IT Student</p>
+
+        <p class="hero-bio">
+          A motivated and detail-oriented Information Technology student with strong knowledge
+          in software development and database management. Building efficient, innovative
+          solutions with modern technologies.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+            View My Work
+          </a>
+          <a href="mailto:praveenakanakanathan@gmail.com" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <span>Find me on</span>
+          <a href="https://linkedin.com/in/praveena-kanakanathan-8300aa362" target="_blank" class="social-link" title="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="mailto:praveenakanakanathan@gmail.com" class="social-link" title="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+          <a href="tel:+94769487776" class="social-link" title="Phone">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.41 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-visual">
+        <div class="img-outer">
+          <div class="img-deco-ring"></div>
+          <div class="img-deco-fill"></div>
+          <div class="img-frame">
+            <img src="photo.jpeg" alt="Piraveena Kanakanathan"
+              onerror="this.style.background='linear-gradient(145deg,#E1F5EE,#9FE1CB)';this.style.display='block';">
+          </div>
+          <div class="img-badge">
+            <div class="badge-icon">💻</div>
+            <div>
+              <div class="badge-label">Currently studying</div>
+              <div class="badge-value">BIT @ UoM</div>
+            </div>
+          </div>
+          <div class="img-badge2">
+            <div class="badge2-num">4+</div>
+            <div class="badge2-text">Projects Built</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- .hero -->
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div><!-- .hero-wrapper -->
+
+
+  <!-- ===== STATS STRIP ===== -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <div class="stat-card">
+        <span class="stat-num">8+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">2</span>
+        <span class="stat-label">AI / Image Processing</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">3S</span>
+        <span class="stat-label">A/L Results</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section reveal" id="skills">
+    <div class="section-meta">
+      <span class="section-tag">What I know</span>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-categories">
+      <div>
+        <p class="skill-category-title">Programming Languages</p>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-pill-icon">🐍</span> Python</div>
+          <div class="skill-pill"><span class="skill-pill-icon">☕</span> Java</div>
+          <div class="skill-pill"><span class="skill-pill-icon">#️⃣</span> C#</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🌐</span> JavaScript</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🐘</span> PHP</div>
+        </div>
+      </div>
+      <div>
+        <p class="skill-category-title">Web &amp; Frontend</p>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-pill-icon">🎨</span> HTML5</div>
+          <div class="skill-pill"><span class="skill-pill-icon">💅</span> CSS3</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🌍</span> Web Development</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🖥️</span> Desktop Applications</div>
+        </div>
+      </div>
+      <div>
+        <p class="skill-category-title">Backend &amp; Database</p>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-pill-icon">🗄️</span> MySQL</div>
+          <div class="skill-pill"><span class="skill-pill-icon">📊</span> Database Management</div>
+          <div class="skill-pill"><span class="skill-pill-icon">👁️</span> Image Processing</div>
+        </div>
+      </div>
+      <div>
+        <p class="skill-category-title">Soft Skills</p>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-pill-icon">💡</span> Problem Solving</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🤝</span> Teamwork</div>
+          <div class="skill-pill"><span class="skill-pill-icon">📚</span> Fast Learner</div>
+          <div class="skill-pill"><span class="skill-pill-icon">🔍</span> Detail-Oriented</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== PROJECTS ===== -->
+  <div class="projects-bg">
+    <section class="section reveal" id="projects">
+      <div class="section-meta">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap">🤖</div>
+            <div class="project-num">01</div>
+          </div>
+          <h3 class="project-title">Plastic Waste Collection Dog Robot</h3>
+          <p class="project-desc">A robot system using Python and image processing to automatically detect and collect plastic waste. Designed to help keep Sri Lanka clean by identifying waste and assisting in environmental cleaning.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Image Processing</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap">☀️</div>
+            <div class="project-num">02</div>
+          </div>
+          <h3 class="project-title">Solar Panel Cleaner System</h3>
+          <p class="project-desc">An automated solar panel cleaning system using Python and threshold detection. Detects dust, dirt, and animal disturbances on solar panels, then automatically activates the cleaning mechanism.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Image Processing</span>
+            <span class="tag">Automation</span>
+            <span class="tag">IoT</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap">🍽️</div>
+            <div class="project-num">03</div>
+          </div>
+          <h3 class="project-title">Catering Management System</h3>
+          <p class="project-desc">A full-featured desktop application built with C# to efficiently manage catering orders, customer details, and services. Streamlines daily operations for catering businesses of any scale.</p>
+          <div class="project-tags">
+            <span class="tag">C#</span>
+            <span class="tag">Desktop App</span>
+            <span class="tag">Database</span>
+            <span class="tag">.NET</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon-wrap">✈️</div>
+            <div class="project-num">04</div>
+          </div>
+          <h3 class="project-title">Tourism Management System</h3>
+          <p class="project-desc">A comprehensive tourism website featuring package management, booking system, guide and vehicle options. Built with PHP and MySQL for a complete end-to-end travel management experience.</p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Web App</span>
+            <span class="tag">Full Stack</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section edu-bg reveal" id="education">
+    <div class="section-meta">
+      <span class="section-tag">My Background</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-timeline">
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-inst">University of Moratuwa</div>
+            <span class="edu-year">2026 – Present</span>
+          </div>
+          <p class="edu-degree">Bachelor of Information Technology (External Degree) — Currently Reading</p>
+          <div class="edu-results">
+            <span class="result-chip">BIT External</span>
+            <span class="result-chip">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-inst">Sri Lanka German Training Institute (SLGTI)</div>
+            <span class="edu-year">2024</span>
+          </div>
+          <p class="edu-degree">NVQ Level 5 Diploma in Information and Communication Technology (ICT)</p>
+          <div class="edu-results">
+            <span class="result-chip">NVQ Level 5</span>
+            <span class="result-chip">ICT Diploma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-inst">Kn/St. Theresa's Girls' College</div>
+            <span class="edu-year">2023</span>
+          </div>
+          <p class="edu-degree">GCE Advanced Level (A/L) — Physical Science Stream</p>
+          <div class="edu-results">
+            <span class="result-chip">3S Results</span>
+            <span class="result-chip">Physical Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-inst">Kn/St. Theresa's Girls' College</div>
+            <span class="edu-year">2019</span>
+          </div>
+          <p class="edu-degree">GCE Ordinary Level (O/L)</p>
+          <div class="edu-results">
+            <span class="result-chip">6A, B, 2C</span>
+            <span class="result-chip">Mathematics: A</span>
+            <span class="result-chip">English: C</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <div class="contact-outer reveal" id="contact">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <span class="contact-tag">Get In Touch</span>
+        <h2 class="contact-title">Let's Build Something Amazing Together</h2>
+        <p class="contact-sub">I'm actively seeking internship opportunities and open to collaborations. Whether you have a project idea or want to chat about tech — I'd love to connect!</p>
+      </div>
+      <div class="contact-right">
+        <div class="contact-items">
+          <a href="tel:+94769487776" class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+94-76 948 7776</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="mailto:praveenakanakanathan@gmail.com" class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">praveenakanakanathan@gmail.com</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://linkedin.com/in/praveena-kanakanathan-8300aa362" target="_blank" class="contact-item">
+            <div class="contact-item-icon">💼</div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value">praveena-kanakanathan</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <div class="contact-item" style="pointer-events:none;">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Inthupuram, Kilinochchi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <span>© 2026 Piraveena Kanakanathan. All rights reserved.</span>
+    <span>Built with passion &amp; <a href="mailto:praveenakanakanathan@gmail.com">reach out anytime</a></span>
+  </footer>
+
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ----- Hamburger Menu -----
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileClose.addEventListener('click', closeMobile);
+
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ----- Scroll Reveal -----
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ----- Smooth Scroll -----
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // ----- Active Nav Highlight on Scroll -----
+    const sections = document.querySelectorAll('section[id], div[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--teal)' : '';
+      });
+    });
+  </script>
+
+</body>
+</html>
